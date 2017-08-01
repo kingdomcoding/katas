@@ -1,4 +1,4 @@
-# karma-starter-pack 
+# karma-kata-seed
 JavaScript + [Karma](http://karma-runner.github.io/) (with [Jasmine](http://jasmine.github.io/))
 
 ## Getting Started
