@@ -1,7 +1,7 @@
-## [Karma-starter-pack] 
+# karma-starter-pack 
 JavaScript + [Karma](http://karma-runner.github.io/) (with [Jasmine](http://jasmine.github.io/))
 
-### Getting Started
+## Getting Started
 
 Clone this repo with `git`:
 
