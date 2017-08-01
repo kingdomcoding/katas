@@ -1,6 +1,10 @@
 describe("Person", function () {
   it("has a greeting", function() {
+	// arrange
     var person = new Person();
-    expect(person.greet).toBe("Hello!");
+	// act
+	var result = person.greet;
+	// assert
+    expect(result).toBe("Hello!");
   });
 });
