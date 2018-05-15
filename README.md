@@ -18,4 +18,4 @@ Run test:
 
 You should eventually see 1 test ran and 0 failures.
 
-Now you can start your kata! May we suggest the [FizzBuzz](http://www.codekatas.org/casts/code-kata-fizzbuzz-csharp)?
+Now you can start your kata! May we suggest the [FizzBuzz](http://www.tddbuddy.com/katas/Fizz%20Buzz%20Whiz.pdf)?
