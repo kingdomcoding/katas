@@ -5,8 +5,8 @@ JavaScript + [Karma](http://karma-runner.github.io/) (with [Jasmine](http://jasm
 
 Clone this repo with `git`:
 
-    git clone https://github.com/StoneAgeTechnologies/karma-starter-pack.git
-    cd karma-starter-pack
+    git clone https://github.com/tddbuddy/karma-kata-seed
+    cd karma-kata-seed
 
 Install dependencies:
 
