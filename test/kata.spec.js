@@ -1,10 +1,11 @@
 describe("Person", function () {
   it("has a greeting", function() {
 	// arrange
-	var person = new Person();
+	let person = new Person();
 	// act
-	var actual = person.greet;
+	let actual = person.greet;
 	// assert
-	expect(actual).toBe("Hello!");
+	let expected = "Hello!";
+	expect(actual).toBe(expected);
   });
 });

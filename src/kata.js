@@ -1,3 +1,3 @@
-function Person() {
+let Person = function() {
   return { greet: "Hello!" };
 }
