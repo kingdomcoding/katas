@@ -5,7 +5,7 @@ describe("Person", function () {
 	// act
 	let actual = person.greet;
 	// assert
-	let expected = "Hello!";
+	const expected = "Hello!";
 	expect(actual).toBe(expected);
   });
 });
