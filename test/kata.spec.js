@@ -1,104 +1,100 @@
-describe("Given that I have chosen rock", function () {
-	let myMove = "rock";
+describe("Given that I have chosen rock", () => {
+	let myMove = moves.ROCK
 
-	describe("When the opponent chooses scissors", function () {
-		let theirMove = "scissors";
+	describe('When the opponent chooses scissors', () => {
+		let theirMove = moves.SCISSORS;
 
-		it("Then I should win", function () {
-			
+		it("Then I win", () => {
 			let winner = playRound(myMove, theirMove);
-
-			expect(winner).toBe("me");
-		});
-	});
-
-	describe("When the opponent chooses paper", function() {
-		let theirMove = "paper";
-
-		it("Then they should win", function() {
-			let winner = playRound(myMove, theirMove);
-
-			expect(winner).toBe("them");
-		});
-	});
-
-	describe("When the opponent chooses rock", function() {
-		let theirMove = "rock";
-
-		it("Then it should be a draw", function() {
-			let winner = playRound(myMove, theirMove);
-
-			expect(winner).toBe("neither");
+			expect(winner).toBe(winners.ME)
 		})
 	})
 	
-});
+	describe('When the opponent chooses paper', () => {
+		let theirMove = moves.PAPER
 
-describe("Given that I have chosen scissors", function () {
-	let myMove = "scissors";
-
-	describe("When the opponent chooses rock", function () {
-		let theirMove = "rock";
-
-		it("Then they should win", function() {
-			let winner = playRound(myMove, theirMove);
-
-			expect(winner).toBe("them");
-		})
-	});
-
-	describe("When the opponent chooses paper", function() {
-		let theirMove = "paper";
-
-		it("Then I should win", function() {
-			let winner = playRound(myMove, theirMove);
-
-			expect(winner).toBe("me");
+		it('Then they win', () => {
+			let winner = playRound(myMove, theirMove)
+			expect(winner).toBe(winners.THEM)
 		})
 	})
 
-	describe("When the opponent chooses scissors", function() {
-		let theirMove = "scissors";
+	describe('When the opponent chooses rock', () => {
+		let theirMove = moves.ROCK
 
-		it("Then it should be a draw", function() {
-			let winner = playRound(myMove, theirMove);
-
-			expect(winner).toBe("neither");
-		});
+		it('Then it should be a draw', () => {
+			let winner = playRound(myMove, theirMove)
+			expect(winner).toBe(winners.DRAW)
+		})
 	})
-});
+})
 
-describe("Given that I have chosen paper", function () {
-	let myMove = "paper";
+describe('Given that I have chosen scissors', () => {
+	let myMove = moves.SCISSORS
 
-	describe("When the opponent chooses scissors", function () {
-		let theirMove = "scissors";
+	describe('When the opponent chooses rock', () => {
+		let theirMove = moves.ROCK
 
-		it("Then they should win", function() {
-			let winner = playRound(myMove, theirMove);
+		it('Then they should win', () => {
+			let winner = playRound(myMove, theirMove)
 
-			expect(winner).toBe("them");
-		});
-	});
-	
-	describe("When the opponent chooses rock", function() {
-		let theirMove =  "rock";
+			expect(winner).toBe(winners.THEM)
+		})
+	})
 
-		it("Then I should win", function() {
-			let winner = playRound(myMove, theirMove);
+	describe('When the opponent chooses paper', () => {
+		let theirMove = moves.PAPER
 
-			expect(winner).toBe("me");
-		});
-	});	
+		it('Then I should win', () => {
+			let winner = playRound(myMove, theirMove)
 
-	describe('When the opponent chosses paper', function() {
-		let theirMove = "paper";
-
-		it("Then it should be a draw", function() {
-			let winner = playRound(myMove, theirMove);
-
-			expect(winner).toBe("neither");
+			expect(winner).toBe(winners.ME)
 		})
 	})
 	
-});
+	describe('When the opponent chooses scissors', () => {
+		let theirMove = moves.SCISSORS
+
+		it('Then it should be a draw', () => {
+			let winner = playRound(myMove, theirMove)
+
+			expect(winner).toBe(winners.DRAW)
+		})
+	})
+})
+
+describe('Given that I have chosen paper', () => {
+	let myMove = moves.PAPER
+
+	describe('When the opponent chooses rock', () => {
+		let theirMove = moves.ROCK
+
+		it('Then I should win', () => {
+			let winner = playRound(myMove, theirMove)
+
+			expect(winner).toBe(winners.ME)
+		})
+	})
+	
+	describe('When the opponent chooses scissors', () => {
+		let theirMove = moves.SCISSORS
+
+		it('Then they should win', () => {
+			let winner = playRound(myMove, theirMove)
+
+			expect(winner).toBe(winners.THEM)
+		})
+	})
+	
+	describe('When the opponent chooses paper', () => {
+		let theirMove = moves.PAPER
+
+		it('Then it should be a draw', () => {
+			let winner = playRound(myMove, theirMove)
+
+			expect(winner).toBe(winners.DRAW)
+		})
+	})
+	
+})
+
